@@ -3,7 +3,7 @@ Laboratório de Desenvolvimento de Dispositivos Móveis
 
 Repositório dedicado para o trabalho de LDDM
 
-Nome do Projeto: Advance
+Nome do Projeto: Advance Nutrition
 
 Integrantes:
 Eduardo Rangel Becattini, 
