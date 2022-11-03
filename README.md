@@ -1,22 +1,16 @@
-# Advance Nutrition
-Laboratório de Desenvolvimento de Dispositivos Móveis
+# teste
 
-Repositório dedicado para o trabalho de LDDM
+A new Flutter project.
 
-Nome do Projeto: Advance Nutrition
+## Getting Started
 
-Integrantes:
-Eduardo Rangel Becattini, 
-Lucas Fiori Magalhães Machado, 
-Marco Túlio Agapito de Souza, 
-Ricardo Meireles Trindade Pereira, 
-Tainan Eduarda Silva Bueno. 
+This project is a starting point for a Flutter application.
 
-Objetivo do projeto: apresentar dietas e rotinas de treino personalizadas para estimular o cuidado com a saúde.
-Público alvo do app: adultos que se interessam pela saúde física e procuram uma aplicação simples e prática para melhorar a saúde.
-Principais funcionalidades:
-Criação de perfil
-Gráfico de evolução do usuário
-Página de dietas recomendadas
-Exercício selecionados
-Contador de calorias
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
