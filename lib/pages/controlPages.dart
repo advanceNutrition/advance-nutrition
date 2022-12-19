@@ -1,6 +1,9 @@
 import "package:flutter/material.dart";
-
-import 'diario.dart';
+import '../pages/new_food.dart';
+import '../backend/model/Food.dart';
+import '../pages/food_list.dart';
+import '../pages/diario.dart';
+import 'food_list.dart';
 import 'perfil.dart';
 import 'inicio.dart';
 
@@ -10,12 +13,31 @@ class ControlPages extends StatefulWidget {
 }
 
 class _ControlPagesState extends State<ControlPages> {
+  List<Food> recentFoods = [];
+  void _addFood(name, grams, calories, date) {
+    setState(() {
+      recentFoods
+          .add(Food(calories: calories, date: date, grams: grams, name: name));
+    });
+  }
+
+  void _startAddFood() {
+    showModalBottomSheet(
+        context: context,
+        builder: (_) {
+          return NewFood(_addFood);
+        });
+  }
+
+  void _deleteFood(name) {
+    setState(() {
+      recentFoods.removeWhere((food) => food.name == name);
+    });
+  }
+
+
   int _indiceAtual = 0;
-  final List<Widget> _telas = [
-    Inicio(),
-    Diario("Meu Diario"),
-    Perfil()
-  ];
+
 
   void onTabTapped(int index) {
     setState(() {
@@ -25,6 +47,12 @@ class _ControlPagesState extends State<ControlPages> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> _telas = [
+      Inicio(),
+      Diario(title: "Diario"),
+      Perfil()
+    ];
+
     return Scaffold(
       body: _telas[_indiceAtual],
       bottomNavigationBar: BottomNavigationBar(

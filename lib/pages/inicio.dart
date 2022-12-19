@@ -2,8 +2,8 @@ import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:vector_math/vector_math_64.dart' as math;
-import 'package:advance_nutrition/backend/model/receita.dart';
 import 'package:advance_nutrition/pages/mealScreen.dart';
+import '../backend/model/Receita.dart';
 
 class Inicio extends StatelessWidget {
   @override
@@ -27,25 +27,23 @@ class Inicio extends StatelessWidget {
               child: Container(
                 color: Colors.white,
                 padding: const EdgeInsets.only(
-                    top: 40, left: 32, right: 16, bottom: 10),
+                    top: 10, left: 32, right: 0, bottom: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     ListTile(
                       title: Text(
-                        "24/01/2000",
+                        "Olá Marco",
                         style: TextStyle(
-                            fontWeight: FontWeight.w400, fontSize: 14),
+                            fontWeight: FontWeight.w800, fontSize: 18),
                       ),
                       subtitle: Text(
-                        "Olá, Marco",
+                        "Bem-vindo de volta",
                         style: TextStyle(
-                            fontWeight: FontWeight.w800,
-                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,
                             color: Colors.black),
                       ),
-                      trailing: ClipOval(
-                          child: Image.asset("assets/images/user.jpg")),
                     ),
                     SizedBox(
                       height: 10,
@@ -224,7 +222,7 @@ class _RadialProgress extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: _RadialPainter(
-        progress: 0.9, //MUDAR AKI COM VALOR DO USUARIO
+        progress: 0.5, //MUDAR AKI COM VALOR DO USUARIO
       ),
       child: Container(
         height: height,

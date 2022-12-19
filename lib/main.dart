@@ -1,15 +1,14 @@
-import 'package:advance_nutrition/backend/Service/usuarioService.dart';
 import 'package:flutter/material.dart';
 import 'package:advance_nutrition/pages/controlPages.dart';
 import 'package:advance_nutrition/pages/inicio.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'pages/loginPage.dart';
+import 'pages/login.dart';
+import 'package:advance_nutrition/backend/service/DAO.dart';
 
-void main () async {
+void main () {
   WidgetsFlutterBinding.ensureInitialized();
-  await Get.putAsync(() => UsuarioService().init());
-  runApp(MyApp());
+   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget{

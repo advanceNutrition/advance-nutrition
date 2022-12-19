@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:advance_nutrition/backend/model/receita.dart';
+import 'package:advance_nutrition/backend/model/Receita.dart';
 
 class MealDetailScreen extends StatelessWidget {
   final Receita meal;

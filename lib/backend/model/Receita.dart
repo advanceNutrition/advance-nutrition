@@ -34,7 +34,7 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
       name: "Pesto Pasta",
       kiloCaloriesBurnt: "612",
       timeTaken: "15",
-      imagePath: "assets/images/pesto_pastas.jpg",
+      imagePath: "assets/images/pesto_pasta.jpg",
       ingredients: [
         "1 cup of granola",
         "1 banana",
@@ -52,7 +52,7 @@ Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Vitae aliquet nec
       name: "Keto Snack",
       kiloCaloriesBurnt: "414",
       timeTaken: "16",
-      imagePath: "assets/keto_snack.jpg",
+      imagePath: "assets/images/keto_snack.jpg",
       ingredients: [
         "1 cup of granola",
         "1 banana",
